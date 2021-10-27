@@ -27,4 +27,5 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Init
 PRODUCT_PACKAGES += \
 	init.mt6873.rc \
-	fstab.mt6873
+	fstab.mt6873 \
+	perf_profile.sh

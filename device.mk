@@ -13,6 +13,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30 31
 
@@ -29,3 +34,7 @@ PRODUCT_PACKAGES += \
 	init.mt6873.rc \
 	fstab.mt6873 \
 	perf_profile.sh
+
+# XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts

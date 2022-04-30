@@ -29,6 +29,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false 
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_mt6873
+
 # Init
 PRODUCT_PACKAGES += \
 	init.mt6873.rc \

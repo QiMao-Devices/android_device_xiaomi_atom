@@ -55,6 +55,10 @@ endif
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.xiaomi_mt6873
+TARGET_USES_FOD_ZPOS := true
+
 # Kernel
 TARGET_FORCE_PREBUILT_KERNEL := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img

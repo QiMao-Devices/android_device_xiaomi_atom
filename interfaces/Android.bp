@@ -1,9 +1,9 @@
 hidl_package_root {
     name: "vendor.xiaomi",
-    path: "device/xiaomi/mt6873/interfaces",
+    path: "device/xiaomi/atom/interfaces",
 }
 
 hidl_package_root {
     name: "vendor.goodix",
-    path: "device/xiaomi/mt6873/interfaces",
+    path: "device/xiaomi/atom/interfaces",
 }

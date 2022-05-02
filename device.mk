@@ -39,9 +39,9 @@ PRODUCT_PACKAGES += \
 	fstab.mt6873 \
 	perf_profile.sh
 
-# XiaomiParts
+# RcsService
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    RcsService 
 
 # Permissions
 PRODUCT_COPY_FILES += \

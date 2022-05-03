@@ -13,10 +13,13 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+# Runtime Overlays
+PRODUCT_PACKAGES += \
+   CarrierConfigOverlayAtom \
+   FrameworksResOverlayAtom \
+   SettingsOverlayAtom \
+   SystemUIOverlayAtom \
+   TelephonyOverlayAtom
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30 31

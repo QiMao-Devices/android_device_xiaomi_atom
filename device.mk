@@ -13,6 +13,13 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30 31
+
+# QiMao overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-qimao
+
 # Runtime Overlays
 PRODUCT_PACKAGES += \
    CarrierConfigOverlayAtom \
@@ -20,9 +27,6 @@ PRODUCT_PACKAGES += \
    SettingsOverlayAtom \
    SystemUIOverlayAtom \
    TelephonyOverlayAtom
-
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 30 31
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

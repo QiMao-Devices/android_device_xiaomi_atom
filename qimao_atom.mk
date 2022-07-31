@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/atom/device.mk)
 
 # Inherit from the Project-QiMao configuration.
 $(call inherit-product, vendor/qimao/mobile.mk)
+QIMAO_MAINTAINER := HuaLiMao-AQ
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080

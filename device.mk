@@ -50,8 +50,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
 	init.mt6873.rc \
-	fstab.mt6873 \
-	perf_profile.sh
+	fstab.mt6873
 
 # RcsService
 PRODUCT_PACKAGES += \

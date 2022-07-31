@@ -19,12 +19,6 @@ on boot
     # ZRAM
     swapon_all /vendor/fstab.enableswap
 
-# Performance profiles
-service performance /system/bin/perf_profile.sh
-    user root
-    group root system radio
-    disabled
-
 on property:sys.boot_completed=1
     chown root root /sys/module/ged/parameters/gx_force_cpu_boost
     chown root root /proc/cpufreq/cpufreq_power_mode

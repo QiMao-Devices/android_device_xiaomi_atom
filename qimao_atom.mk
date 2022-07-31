@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/atom/device.mk)
 
 # Inherit from the Project-QiMao configuration.
-$(call inherit-product, vendor/qimao/mobile.mk)
+$(call inherit-product, vendor/qimao/config/mobile.mk)
 QIMAO_MAINTAINER := HuaLiMao-AQ
 
 # Boot Animation

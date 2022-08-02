@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Call proprietary blob setup
+$(call inherit-product-if-exists, vendor/xiaomi/atom/atom-vendor.mk)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
@@ -64,3 +67,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml 
 
+# Telephony
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
+
+# Shims
+PRODUCT_PACKAGES += \
+    ImsServiceBase \
+    libshim_vtservice

@@ -17,7 +17,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/atom/atom-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 30 31
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # QiMao overlay
 DEVICE_PACKAGE_OVERLAYS += \

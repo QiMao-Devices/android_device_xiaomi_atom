@@ -2424,7 +2424,6 @@ vendor/lib/mt6873/libaiselector.so
 vendor/lib/mt6873/libdpframework.so
 vendor/lib/mt6873/libnir_neon_driver.so
 vendor/lib/mt6873/libpq_prot.so
-vendor/lib/mt6873/libmdia_ut.so
 vendor/lib/ov16a1qofilm_mipi_raw_tuning.so
 vendor/lib/ov16a1qsunny_mipi_raw_tuning.so
 vendor/lib/ov48bofilm_mipi_raw_tuning.so
@@ -2734,7 +2733,7 @@ vendor/lib64/mt6873/libdpframework.so
 vendor/lib64/mt6873/libmdla_ut.so
 vendor/lib64/mt6873/libnir_neon_driver.so
 vendor/lib64/mt6873/libpq_prot.so
-vendor/lib64/mt6873/libmdia_ut.so
+vendor/lib64/mt6873/libmdla_ut.so
 vendor/lib64/nwk_opt_imp.so
 vendor/lib64/ov16a1qofilm_mipi_raw_IdxMgr.so
 vendor/lib64/ov16a1qofilm_mipi_raw_tuning.so
@@ -2833,7 +2832,7 @@ vendor/etc/init/volte_clientapi_ua.rc
 vendor/etc/init/volte_rcs_ua.rc
 vendor/etc/init/vpud.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/init/ueventd.rc
+vendor/ueventd.rc
 
 # Rootdir-Hardware
 -vendor/etc/init/hw/factory_init.connectivity.common.rc

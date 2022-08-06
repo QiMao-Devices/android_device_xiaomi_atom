@@ -13,6 +13,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/xiaomi/atom/atom-vendor.mk)
 
+# Kernel modules
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/modules/,$(TARGET_COPY_OUT_VENDOR)/lib/modules)
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 

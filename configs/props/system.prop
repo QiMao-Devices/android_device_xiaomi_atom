@@ -9,7 +9,6 @@ ro.mediatek.wlan.p2p=1
 mediatek.wlan.ctia=0
 wifi.tethering.interface=ap0
 wifi.direct.interface=p2p0
-ro.opengles.version=196610
 
 # USB MTP WHQL
 ro.sys.usb.mtp.whql.enable=0
@@ -32,7 +31,6 @@ ro.kernel.zio=38,108,105,16
 
 # Disable dirty region for Mali
 #debug.hwui.render_dirty_regions=false
-ro.sf.lcd_density=440
 
 # performance
 ro.mtk_perf_simple_start_win=1
@@ -46,26 +44,9 @@ ro.vendor.aee.enforcing=no
 #logd buffer_size
 ro.logd.size=2M
 
-#audio-add for misound
-ro.vendor.audio.soundfx.type=mi
-ro.vendor.audio.soundfx.usb=true
-
 #audio-add for soudtrigger
 ro.vendor.audio.soundtrigger=mtk
 ro.vendor.audio.soundtrigger.lowpower=true
-
-#audio-add for SoS
-ro.vendor.audio.sos=true
-
-#audio add vc default volume
-ro.config.vc_call_vol_default=4
-
-#Telephony features controller
-#value: 0000 0010
-ro.vendor.radio.features_common=2
-
-# Bluetooth
-persist.bluetooth.bluetooth_audio_hal.disabled=true 
 
 # Ims
 persist.dbg.volte_avail_ovr=1

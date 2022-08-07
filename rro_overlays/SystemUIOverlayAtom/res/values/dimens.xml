@@ -51,4 +51,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    <!-- the padding of the rounded corner -->
     <dimen name="rounded_corner_radius">132px</dimen>
 
+   <!-- Sets the height of the power key -->
+    <dimen name="physical_power_button_center_screen_location_y">990px</dimen>
+
 </resources>

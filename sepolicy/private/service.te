@@ -1,0 +1,2 @@
+type mtk_ims_service, service_manager_type;
+type vtservice_service, service_manager_type;

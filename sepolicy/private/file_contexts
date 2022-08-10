@@ -1,0 +1,5 @@
+# Udfps
+/system/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_mt6873           u:object_r:hal_fingerprint_default_exec:s0
+
+# system data files
+/system/bin/vtservice           u:object_r:vtservice_exec:s0

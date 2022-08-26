@@ -43,6 +43,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     CameraGo
 
+# Call vol steps
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.config.vc_call_vol_steps=7
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_mt6873
